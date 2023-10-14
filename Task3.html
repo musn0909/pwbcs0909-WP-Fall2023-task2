@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Portfolio</title>
+        <style>
+            body{
+                background-color: rgb(18, 20, 20);
+            }
+            .hero{
+                height: 100vh;
+                width: 100%;
+                background-image: url(background.jpg);
+                background-size: cover;
+                background-position: center;
+                
+            }
+            nav{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-top: 45px; 
+                padding-left: 8%;
+                padding-right: 8%;
+            }
+           .logo{
+            color: rgb(19, 190, 237);
+            font-size: 35px;
+            letter-spacing: 1px;
+            cursor: pointer;
+           }
+           span{
+            color: rgb(174, 12, 254);
+           }
+           nav ul li{
+            list-style-type: none;
+            display: inline-block;
+            padding: 10px 25px;
+           }
+           nav ul li a{
+            color: rgb(35, 16, 250);
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: capitalize;
+           }
+           nav ul li a:hover{
+            color:rgb(20, 174, 230) ;
+            transition: .4s;
+           }
+           .btn{
+            background-color:rgb(7, 202, 245) ;
+            color:rgb(209, 30, 164) ;
+            text-decoration: none;
+            border: 2px solid transparent;
+            font-weight: bold;
+            padding: 10px 25px;
+           border-radius:30px ;
+           transition: transform .4s;
+           }
+           .btn:hover{
+            border: rgb(14, 71, 226);
+            transform: scale(1.42);
+           }
+           .content{
+            position: absolute;
+            top: 50%;
+            left: 8%;
+            transform: translateY(-50%);
+           }
+           h1{
+            color: rgb(19, 202, 223);
+            margin: 20px 0px 20px;
+            font-size: 75px;
+           }
+           h4{
+            color: rgb(148, 141, 43);
+            margin: 5px 0px 5px;
+            font-size: 45px;
+           }
+           h3{
+            color: rgb(27, 255, 156);
+            font-size: 25px;
+            margin: auto;
+           }
+           .newslatter form{
+            width: 380px;
+            max-width: 100%;
+            position: relative;
+           }
+           .newslatter form input:first-child{
+            display: inline-block;
+            width: 60%;
+            padding: 14px 130px 14px 15px;
+            border: 2px solid rgb(23, 165, 247);
+            outline: none;
+         border-radius: 30px ;
+           }
+           .newslatter form input:last-child{
+            background-color: transparent;
+            cursor: pointer;
+            position: absolute;
+            display: inline-block;
+            outline: none;
+            border: none;
+            padding: 10px 30px;
+            border-radius: 30px;
+            background-color: rgb(90, 199, 227);
+            color: rgb(0, 255, 187);
+            box-shadow: 0px 0px 5px rgb(0, 0, 0), 0px 0px 15px #a9c604;
+            top: 4%;
+            right: 6px;
+            bottom: 4%;
+           }
+           .about{
+            width: 100%;
+            padding: 100px;
+            background-color: #c90d0d;
+           }
+           .about img{
+            height: auto;
+            width: 430px;
+           }
+           .About-text{
+            width: 550px;
+           }
+           .main{
+            width: 1130px;
+            max-width: 100%;
+            padding-right: 40%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: safe;
+           }
+           .About-text h2{
+            color: rgb(232, 120, 15);
+           font-size: 75px;
+           text-transform: capitalize;
+           margin-bottom: 20px;
+           margin-right: 100%;
+           }
+           .About-text h5{
+            color:  rgb(239, 144, 19);
+            letter-spacing: 2px;
+            font-size: 22px;
+            margin-bottom: 25px;
+            text-transform: capitalize;
+           }
+           .About-text p{
+            color: rgb(243, 243, 235);
+            letter-spacing: 1px;
+            line-height: 28px;
+            font-size: 18px;
+            margin-bottom:45px;
+           }
+           button{
+            background-color:rgb(16, 167, 116);
+            color: white;
+            text-decoration: none;
+            border: 2px solid;
+            font-weight: bold;
+            padding: 13px 30px;
+            border-radius: 30px;
+            transition: .4s;
+           }
+           button:hover{
+            background-color: transparent;
+            border: 2px solid rgb(0, 5, 3);
+            cursor: pointer;
+           }
+        </style>
+        <body>
+            <div class="hero">
+                <nav>
+                    <h2 class="logo">Port<span>folio</span></h2>
+                    <ul>
+                        <section id="Home">
+                        <li><a href="#Home">Home</a></li>
+                        <li><a href="#About">About me</a></li>
+                        <li><a href="Services.html">Services</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                    </ul>
+                </section>
+                    <a href="#" class="btn">Subscribe</a>
+                </nav>
+                <div class="content">
+                    <h4>Hi! my name is</h4>
+                    <h1>Umar Shamas <span>Nasir</span></h1><br>
+                    <h3>Any thing you want to know about me.</h3><br>
+                <div class="newslatter">
+                    <form>
+                        <input type="email" name="email" id="mail" placeholder="Enter your email">
+                        <input type="submit" name="submit" value="start">
+                    </form>
+                </div>
+                </div>
+            </div>
+            <section id="About">
+                <div class="main">
+                    <div class="About-text">
+                        <h2>About me</h2>
+                        <h5></h5>
+                        <p>As an up-and-coming web wizard, I'm embarking on an exciting journey in the realm of web development. Armed with a solid grasp of the fundamental coding languages and an insatiable curiosity for crafting captivating digital experiences, I'm on a quest to dive headfirst into the ever-shifting landscape of web development. Fueled by an unyielding dedication to self-improvement and an unrelenting work ethic, I'm all about upskilling and tackling thrilling web projects. I'm thrilled to infuse my boundless enthusiasm and fresh perspective into a dynamic team, where I can soak up knowledge, scale new heights, and leave an indelible mark in the vast universe of web development."</p>
+                        <button type="button"> Lets begin chat</button>
+                    </div><hr>
+
+
+
+                    <img src="umar.jpg" alt="Picture" width="500">
+                    
+                </div>
+            </section>
+        </body>
